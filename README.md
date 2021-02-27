@@ -1,6 +1,6 @@
 # Conversao-Python-para-Java
 
-CONVERSÂO DE CAlCULADOR EM PYTHON PARA JAVA
+CONVERSÂO DE CAlCULADOR EM PYTHON PARA JAVA 
 
 Este projeto se baseia em conversão de uma calculador de Progressão Aritmética em Python para Java.
 
