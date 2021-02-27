@@ -5,9 +5,10 @@ import java.util.Scanner;
 
 public class Calculadora_Convertida_Victor_de_Moraes {
     
-    //Aluno:Victor de Moraes, 3101 TI;
-    //Github:https://github.com/VicktorMS;
-    //Professor:Felipe Nascimento;
+    //Aluno: Victor de Moraes, 3101 TI;
+    //Github: https://github.com/VicktorMS;
+    //Professor: Felipe Nascimento;
+    //Projeto: Conversão de Caçculadora em Python para Java;
 
       public static void main(String[] args) {
                 
@@ -19,7 +20,7 @@ public class Calculadora_Convertida_Victor_de_Moraes {
         double soma;
         int boot;
         int select2;
-              
+                      
          Scanner a = new Scanner (System.in);
         System.out.print("Digite 0 para iniciar o sistema: ");
         boot = a.nextInt();
@@ -29,12 +30,13 @@ public class Calculadora_Convertida_Victor_de_Moraes {
             Scanner ler = new Scanner (System.in);
                System.out.print("SEJA BEM VINDO AO CALCULADOR DE PROGRESSÕES ARITMÉTICAS" + "\n" +
                     " " + "\n" +
-                    "Digite 1 para calcular o termo geral(AN) " + "\n" +
-                    "Digite 2 para calcular o primeiro termo(AM):" + "\n" +
-                    "Digite 3 para calcular o número de termos(N):" + "\n" +
-                    "Digite 4 para calcular o valor de posição de AM(M):" + "\n" +
-                    "Digite 5 para calcular a razão(R):" + "\n" +
-                    "Digite 6 para calcular a SOMA: " + "\n" +
+                    "Digite 0 para sair do programa. " + "\n" +
+                    "Digite 1 para calcular o termo geral(AN)." + "\n" +
+                    "Digite 2 para calcular o primeiro termo(AM)." + "\n" +
+                    "Digite 3 para calcular o número de termos(N)." + "\n" +
+                    "Digite 4 para calcular o valor de posição de AM(M)." + "\n" +
+                    "Digite 5 para calcular a razão(R)." + "\n" +
+                    "Digite 6 para calcular a SOMA. " + "\n" +
                     "-> ");
                select2 = a.nextInt();
                
@@ -127,15 +129,32 @@ public class Calculadora_Convertida_Victor_de_Moraes {
                         System.out.println("O resultado é: " + soma );
                         break;
                     }
-                default:
+                case 0:
+                {
+                    System.exit(0);
                     break;
-                    
-            }  
+                }
+                                                                          
+                default:
+                    break;                   
+            } 
+            Scanner ler2 = new Scanner (System.in);
+                        System.out.println("Você terminou seus caluculos? Deseja fazer outro calculo? ");
+                        System.out.println("Caso deseje digite 0 para continuar." + 
+                                "Caso deseje sair do programa digite outra tecla qualquer.");
+                        boot = ler2.nextInt();
+                        
+                        if (boot != 0 ){
+                            System.exit(0);
+                         
+                        }
            }
         
-        if (boot !=0) {  
+        if (boot !=0){  
             System.out.println("Parece que você digitou uma opção inválida.");
             System.out.println ("Caso deseje acessar a calculadora reinicie o programa e digite a tecla correta.");                        
-      }   
+      
+      }      
     }
   }
+   
